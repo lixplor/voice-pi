@@ -77,7 +77,7 @@ function morningTask() {
 					+ "接下来为您播放: " + radio.title;
 			console.log(speech);
 			mplayerUtils.speak(speech);
-			radioUtils.play(radio, 1);
+			radioUtils.play(radio, 30);
 		})
 		.catch(error => console.log(error));
 		// TODO 当网络请求失败, 仍然要语音播报
@@ -94,7 +94,7 @@ function noonTask() {
 			+ "接下来为您播放: " + radio1.title;
 	console.log(speech);
 	mplayerUtils.speak(speech);
-	radioUtils.play(radio1, 1);
+	radioUtils.play(radio1, 30);
 }
 
 function eveningTask() {
